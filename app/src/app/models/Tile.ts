@@ -1,7 +1,9 @@
 export class Tile {
   public item: string;
+  public selected: boolean;
 
-  constructor() {
-    this.item = 'Z';
+  constructor(item: string) {
+    this.item = item;
+    this.selected = false;
   }
 }
