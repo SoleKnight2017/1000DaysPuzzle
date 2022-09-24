@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { PuzzleOneComponent } from './pages/puzzle-one/puzzle-one.component';
+import { PuzzleTwoComponent } from './pages/puzzle-two/puzzle-two.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PageNotFoundComponent,
-    PuzzleOneComponent
+    PuzzleOneComponent,
+    PuzzleTwoComponent
   ],
   imports: [
     BrowserModule,

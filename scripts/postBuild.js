@@ -2,7 +2,7 @@ const fs = require('fs');
 
 let buildPath = '../docs/';
 let urlPaths = [
-  'NotFound'
+  'iloveyou'
 ];
 
 for (const urlPath of urlPaths) {
