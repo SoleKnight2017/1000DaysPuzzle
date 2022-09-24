@@ -1,0 +1,10 @@
+<p>puzzle-one works!</p>
+<table class="table">
+    <tbody>
+        <tr *ngFor="let r of [].constructor(rows); let y = index">
+            <td *ngFor="let c of [].constructor(cols); let x = index">
+                {{ itemGrid[y][x].item }}
+            </td>
+        </tr>
+    </tbody>
+</table>
