@@ -10,7 +10,7 @@ const title: string = "1000 Days Puzzle";
 
 const routes: Routes = [
     { path: '', component: PuzzleOneComponent, title: title },
-    { path: 'iloveyou', component: PuzzleTwoComponent, title: title },
+    { path: 'iloveu', component: PuzzleTwoComponent, title: title },
     { path: 'anniversary', component: PuzzleThreeComponent, title: title },
     { path: 'NotFound', component: PageNotFoundComponent, title: title },
     { path: '**', redirectTo: '/NotFound', pathMatch: 'full' }

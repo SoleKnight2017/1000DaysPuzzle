@@ -2,7 +2,7 @@ const fs = require('fs');
 
 let buildPath = '../docs/';
 let urlPaths = [
-  'iloveyou',
+  'iloveu',
   'anniversary'
 ];
 
