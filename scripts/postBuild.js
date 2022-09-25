@@ -2,7 +2,8 @@ const fs = require('fs');
 
 let buildPath = '../docs/';
 let urlPaths = [
-  'iloveyou'
+  'iloveyou',
+  'anniversary'
 ];
 
 for (const urlPath of urlPaths) {
