@@ -7,13 +7,15 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { PuzzleOneComponent } from './pages/puzzle-one/puzzle-one.component';
 import { PuzzleTwoComponent } from './pages/puzzle-two/puzzle-two.component';
+import { PuzzleThreeComponent } from './pages/puzzle-three/puzzle-three.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PageNotFoundComponent,
     PuzzleOneComponent,
-    PuzzleTwoComponent
+    PuzzleTwoComponent,
+    PuzzleThreeComponent
   ],
   imports: [
     BrowserModule,
