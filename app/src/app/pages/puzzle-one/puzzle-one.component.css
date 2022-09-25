@@ -12,6 +12,6 @@ table tbody td {
 }
 
 table tbody td.selected {
-    outline: 1px solid #00FF00;
+    outline: 2px solid #00FF00;
 }
 
