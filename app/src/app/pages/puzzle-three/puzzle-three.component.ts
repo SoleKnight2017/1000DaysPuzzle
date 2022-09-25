@@ -81,7 +81,7 @@ export class PuzzleThreeComponent implements OnInit {
 
     for(let v = 0; v < 9; ++v) {
       for(let u = 0; u < 9; ++u) {
-        if(!this.itemGrid[y][x].isError || this.itemGrid[y][x].item === ' ') return false;
+        if(this.itemGrid[v][u].isError || this.itemGrid[v][u].item === ' ') return false;
       }
     }
 
