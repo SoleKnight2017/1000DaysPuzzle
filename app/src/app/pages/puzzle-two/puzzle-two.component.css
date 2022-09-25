@@ -1,0 +1,4 @@
+.distort {
+    font-weight: 900;
+    transform: scaleX(0.2) scaleY(15);
+}
