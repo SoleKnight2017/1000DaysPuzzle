@@ -66,26 +66,27 @@ export class PuzzleThreeComponent implements OnInit {
       }
       this.itemGrid.push(itemRow);
     }
-
   }
 
   checkGrid(x: number, y: number): boolean {
-    if(this.itemGrid[y][x].item === ' ') return false;
-
-    if(!this._checkBox(x, y) || !this._checkRow(x, y) || !this._checkCol(x, y)) {
-      this.itemGrid[y][x].isError = true;
-      return false;
-    }
-
-    this.itemGrid[y][x].isError = false;
-
+    let isValid = true;
     for(let v = 0; v < 9; ++v) {
       for(let u = 0; u < 9; ++u) {
-        if(this.itemGrid[v][u].isError || this.itemGrid[v][u].item === ' ') return false;
+        if(this.itemGrid[v][u].isDisable) continue;
+        if(this.itemGrid[v][u].item === ' ') {
+            isValid = false;
+            continue;
+        }
+
+        if(!this._checkBox(u, v) || !this._checkRow(u, v) || !this._checkCol(u, v)) {
+          this.itemGrid[v][u].isError = true;
+          isValid = false;
+        } else {
+          this.itemGrid[v][u].isError = false;
+        }
       }
     }
-
-    return true;
+    return isValid;
   }
 
   _checkBox(x: number, y: number) : boolean {

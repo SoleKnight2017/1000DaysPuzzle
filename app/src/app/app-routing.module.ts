@@ -5,6 +5,7 @@ import { PuzzleOneComponent } from './pages/puzzle-one/puzzle-one.component';
 import { PuzzleTwoComponent } from './pages/puzzle-two/puzzle-two.component';
 import { PuzzleThreeComponent } from './pages/puzzle-three/puzzle-three.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { PriceComponent } from './pages/price/price.component';
 
 const title: string = "1000 Days Puzzle";
 
@@ -12,6 +13,7 @@ const routes: Routes = [
     { path: '', component: PuzzleOneComponent, title: title },
     { path: 'iloveu', component: PuzzleTwoComponent, title: title },
     { path: 'anniversary', component: PuzzleThreeComponent, title: title },
+    { path: 'SecretPrice', component: PriceComponent, title: title },
     { path: 'NotFound', component: PageNotFoundComponent, title: title },
     { path: '**', redirectTo: '/NotFound', pathMatch: 'full' }
 ];
