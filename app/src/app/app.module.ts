@@ -8,7 +8,7 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
 import { PuzzleOneComponent } from './pages/puzzle-one/puzzle-one.component';
 import { PuzzleTwoComponent } from './pages/puzzle-two/puzzle-two.component';
 import { PuzzleThreeComponent } from './pages/puzzle-three/puzzle-three.component';
-import { PriceComponent } from './pages/price/price.component';
+import { PrizeComponent } from './pages/prize/prize.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +17,7 @@ import { PriceComponent } from './pages/price/price.component';
     PuzzleOneComponent,
     PuzzleTwoComponent,
     PuzzleThreeComponent,
-    PriceComponent
+    PrizeComponent
   ],
   imports: [
     BrowserModule,
